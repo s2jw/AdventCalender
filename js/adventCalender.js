@@ -90,8 +90,6 @@ let n;
 
 
 function openModal() {
-    merry.innerText = "";
-    xmas.innerText = "";
     if (n === 25) {
         merry.innerText = "Merry";
         xmas.innerText = "Chirstmas!";
@@ -117,6 +115,8 @@ window.onclick = function (e) {
 buttons.forEach((btn) => {
     btn.addEventListener("click", function(e) {
         n = Number(e.target.id);
+        merry.innerText = "";
+        xmas.innerText = "";
         openModal();
     });
 }); 
