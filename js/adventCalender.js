@@ -93,6 +93,9 @@ function openModal() {
     if (n == 25) {
         merry.innerText = "Merry";
         xmas.innerText = "Chirstmas!";
+    } else {
+        merry.innerText = "";
+        xmas.innerText = "";
     }
     nowDate.innerText = `12월 ${n}일`;
     bible.innerText = bibleList[n-1].bible;
